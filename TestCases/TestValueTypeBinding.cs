@@ -181,7 +181,7 @@ namespace TestCases
 
         public static void UnitTest_10030()
         {
-            vecCls.Vector2 += TestVector3.One2 * (0.456f - vecCls.Vector2.Y * 2);//这样会有
+            vecCls.Vector2 += TestVector3.One2 * (0.456f - vecCls.Vector2.Y * 2);
 
             Console.WriteLine(vecCls.Vector2);
         }
@@ -190,12 +190,12 @@ namespace TestCases
         {
             TestVector3 pos = TestVector3.One2;
             float offsetX = pos.X - 0.1f;
-            float offsetY = pos.Y - 0.1f;//报错行数在这里
+            float offsetY = pos.Y - 0.1f;
             if (offsetX > 1)
                 Console.WriteLine("1");
             else if (offsetX < -1)
                 Console.WriteLine("2");
-            //注释下面的代码就不会出错了
+            
             else if (offsetY > 1)
                 Console.WriteLine("3");
             else if (offsetY < -1)
